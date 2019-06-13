@@ -23,7 +23,7 @@ import (
 	"strings"
 
 	"github.com/arduino/arduino-cli/commands"
-	"github.com/arduino/arduino-cli/rpc"
+	rpc "github.com/arduino/arduino-cli/rpc/commands"
 )
 
 func ListAll(ctx context.Context, req *rpc.BoardListAllReq) (*rpc.BoardListAllResp, error) {

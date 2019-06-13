@@ -25,7 +25,7 @@ import (
 
 	"github.com/arduino/arduino-cli/arduino/cores/packagemanager"
 	"github.com/arduino/arduino-cli/commands"
-	"github.com/arduino/arduino-cli/rpc"
+	rpc "github.com/arduino/arduino-cli/rpc/commands"
 )
 
 func PlatformUpgrade(ctx context.Context, req *rpc.PlatformUpgradeReq,

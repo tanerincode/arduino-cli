@@ -23,7 +23,7 @@ import (
 	"fmt"
 
 	"github.com/arduino/arduino-cli/commands"
-	"github.com/arduino/arduino-cli/rpc"
+	rpc "github.com/arduino/arduino-cli/rpc/commands"
 )
 
 func List(ctx context.Context, req *rpc.BoardListReq) (*rpc.BoardListResp, error) {
