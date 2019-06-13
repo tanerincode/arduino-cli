@@ -32,6 +32,11 @@ tasks:
     cmds:
       - go test {{ default "-v" .GOFLAGS }} ./legacy/...
 
+  rpc-client:
+    desc: Run the rpc client test routine (server must be already started)
+    cmds:
+      - go test -run TestWithClientE2E ./commands/daemon
+
 vars:
   DEFAULT_TARGETS: "./arduino/... ./auth/... ./cli/... ./commands/... ./executils/... ./version/..."
 
